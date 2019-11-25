@@ -1,4 +1,5 @@
 ﻿using System;
+using Azure.Blob.SASBasedAccess.Core;
 using Microsoft.WindowsAzure.Storage;
 
 namespace Azure.Blob.SASBasedAccess.Interfaces

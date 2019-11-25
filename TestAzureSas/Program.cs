@@ -1,10 +1,10 @@
-﻿using Azure.Blob.SASBasedAccess.Interfaces;
+﻿using System;
+using System.IO;
+using Azure.Blob.SASBasedAccess.Core;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Blob;
-using System;
-using System.IO;
 
-namespace TestAzureSas
+namespace TestConsole
 {
     class Program
     {

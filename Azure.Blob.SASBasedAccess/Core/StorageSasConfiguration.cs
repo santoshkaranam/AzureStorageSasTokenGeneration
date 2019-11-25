@@ -1,9 +1,10 @@
-﻿using Microsoft.WindowsAzure.Storage;
-using System;
+﻿using System;
+using Azure.Blob.SASBasedAccess.Interfaces;
+using Microsoft.WindowsAzure.Storage;
 
-namespace Azure.Blob.SASBasedAccess.Interfaces
+namespace Azure.Blob.SASBasedAccess.Core
 {
-    public class BlobConfiguration : IStorageSasConfiguration
+    public class StorageSasConfiguration : IStorageSasConfiguration
     {
         public string ConnectionString { get; set; }
 

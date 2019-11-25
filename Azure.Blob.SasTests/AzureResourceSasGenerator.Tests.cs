@@ -4,6 +4,7 @@ using Microsoft.WindowsAzure.Storage.Blob;
 using NUnit.Framework;
 using System;
 using System.Threading.Tasks;
+using Azure.Blob.SASBasedAccess.Core;
 
 namespace Azure.Blob.SasTests
 {
@@ -53,9 +54,9 @@ namespace Azure.Blob.SasTests
             return blobClient;
         }
 
-        public BlobConfiguration GetBlobConfig()
+        public StorageSasConfiguration GetBlobConfig()
         {
-            return new BlobConfiguration()
+            return new StorageSasConfiguration()
             {
                 ConnectionString = "DefaultEndpointsProtocol=https;AccountName=azureblobsastest1;AccountKey=foexxYwYyzN3g+gDwr72oKX9eQy9XYCh9rg4j+NPcZnfwfKvggx/PN0k38pWFXJMC2MEmBwggUfPjaviPhNVwQ==;EndpointSuffix=core.windows.net"
             };
